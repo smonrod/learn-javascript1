@@ -1,23 +1,16 @@
-let auto1 = {
-    marca: 'FIAT',
-    modelo: 'UNO',
-    peso: 550,
-    color: 'Rojo'
+const vendedor = {
+    nombre: 'Pedro',
+    apellido: 'Gonzalez',
+    empresa: 'Auto S.A',
+    habilidadesBlandas: ['Carisma', 'Puntualidad'],
+    vender: function(){
+        return "Pedro ha vendido un auto"
+    },
+    nombreCompleto: function(){
+        return this.nombre +" "+ this.apellido
+
+    }
 }
 
-let auto2 = {
-    marca: 'RENAULT',
-    modelo: '12',
-    peso: 550,
-    color: 'Marrón'
-}
-
-//modificar un objeto
-
-console.log(auto1)
-
-auto1.marca = 'BMW'
-auto1.modelo= 'X5'
-
-console.log(auto1)
-
+//this se utiliza para llamar al atributo que esta fuera de su función o scope
+console.log(vendedor.nombreCompleto())
