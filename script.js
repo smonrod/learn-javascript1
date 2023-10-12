@@ -4,7 +4,7 @@ let auto1 = {
     peso: 550,
     color: 'Rojo'
 }
-//objeto:auto1 clave o atributo:color valor:rojo
+
 let auto2 = {
     marca: 'RENAULT',
     modelo: '12',
@@ -12,5 +12,12 @@ let auto2 = {
     color: 'Marrón'
 }
 
-console.log('El color del auto1 es: ', auto1.color)
-console.log('El color del auto2 es: ', auto2.color)
+//modificar un objeto
+
+console.log(auto1)
+
+auto1.marca = 'BMW'
+auto1.modelo= 'X5'
+
+console.log(auto1)
+
