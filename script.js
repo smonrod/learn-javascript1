@@ -1,9 +1,9 @@
-const temperatura = 76
+let num = 10
 
-function transFormarACelsius(fahrenheit){
-    return (fahrenheit-32) * (5/9);
+function sumarDecena(numero){
+    return numero + 12
 }
 
-const respuesta = transFormarACelsius(temperatura)
+const respuesta = sumarDecena(parseInt(num))
 
-console.log(`La temperatura en grados Celsius es de`, parseInt(respuesta));
+console.log(respuesta);
