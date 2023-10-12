@@ -1,8 +1,9 @@
-
+let a = 5 
+let b = 6
 function suma(x,y){
     return x + y //return es lo que devuelve
 }
 
-let respuesta = suma(5,6)
+let respuesta = suma(a,b)
 
-console.log(respuesta)
+console.log(`La respuesta de ${a} + ${b} es igual a :`,respuesta)
