@@ -1,7 +1,9 @@
-const a = 5 
-const b = 6
-function suma(x,y){
-    console.log(x + y)
+const temperatura = 76
+
+function transFormarACelsius(fahrenheit){
+    return (fahrenheit-32) * (5/9);
 }
 
-const respuesta = suma(a,b)
+const respuesta = transFormarACelsius(temperatura)
+
+console.log(`La temperatura en grados Celsius es de`, parseInt(respuesta));
